@@ -35,11 +35,11 @@ export default function Home() {
                             delay={50}
                             animateBy="letters"
                             direction="top"
-                            className="text-8xl"
+                            className="text-4xl md:text-8xl"
                         />
                     </h1>
 
-                    <div className="text-4xl">
+                    <div className="text-2xl md:text-4xl">
                         Create your GDPR-compliant ROPA files with ease.<br/>
                         <TypingAnimation delay={1000} startOnView={true}>Powered by AI.</TypingAnimation>
                     </div>
