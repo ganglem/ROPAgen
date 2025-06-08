@@ -45,5 +45,5 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## 🏞️ .env
-Please create a local .env with an OPENAI_API_KEY variable.
+Please create a local .env with an OPENAI_API_KEY variable..
 
