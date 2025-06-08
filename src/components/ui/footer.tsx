@@ -11,7 +11,7 @@ export default function Footer({
                                    githubUrl = "https://github.com/ganglem/ropagen", // Bitte anpassen
                                }: FooterProps) {
     return (
-        <footer className="bg-background border-t border-border text-muted-foreground">
+        <footer className="border-t border-border text-muted-foreground">
             <div className="container mx-auto px-4 py-5 md:px-3 lg:py-8">
                 <div className="grid gap-10 md:grid-cols-12">
                     {/* Linke Sektion: Produktname & GitHub */}
