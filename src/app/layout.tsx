@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import {ThemeProvider} from "next-themes";
-import Link from 'next/link'
-import Themetoggle from "@/components/ui/themetoggle";
 import NavHeader from "@/components/ui/nav-header";
 import Footer from "@/components/ui/footer";
 import Head from "next/head";
@@ -22,7 +19,7 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
         <Head>
-            <link rel="stylesheet" href="https://use.typekit.net/jro1cfz.css"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
         <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
