@@ -50,7 +50,7 @@ export default function RootLayout({
                 </header>
 
                 {/* MAIN CONTENT */}
-                <main className="flex-grow px-2 md:px-4 py-4 md:py-6">{children}</main>
+                <main className="flex-grow px-2 md:px-4 pt-4 md:pt-6">{children}</main>
               </div>
 
               {/* FOOTER - now outside the background area */}

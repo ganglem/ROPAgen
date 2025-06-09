@@ -47,7 +47,7 @@ export default function RopaForm({setGeneratedDocument}: {setGeneratedDocument: 
     }
 
     return (
-        <div className="space-y-6">
+        <div className="space-y-6 w-full">
 
             <RopaTemplateSelector onSelect={setDocumentData}></RopaTemplateSelector>
 

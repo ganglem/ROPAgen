@@ -34,40 +34,40 @@ export default function Footer({
                     {/* Rechte Sektion: Links in Spalten */}
                     <div className="md:col-span-8 lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-8 text-sm">
                         <div>
-                            <h3 className="font-semibold text-foreground mb-4">Rechtliches</h3>
+                            <h3 className="font-semibold text-foreground mb-4">Legal</h3>
                             <ul className="space-y-3">
                                 <li>
                                     <Link href="/impressum" className="hover:text-foreground transition-colors">
-                                        Impressum
+                                        Imprint
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link href="/privacy-policy" className="hover:text-foreground transition-colors">
-                                        Datenschutz
-                                    </Link>
-                                </li>
+                                {/*<li>*/}
+                                {/*    <Link href="/privacy-policy" className="hover:text-foreground transition-colors">*/}
+                                {/*        Datenschutz*/}
+                                {/*    </Link>*/}
+                                {/*</li>*/}
                             </ul>
                         </div>
-                        <div>
-                            <h3 className="font-semibold text-foreground mb-4">Unternehmen</h3>
-                            <ul className="space-y-3">
-                                <li>
-                                    <Link href="/about" className="hover:text-foreground transition-colors">
-                                        Über uns
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/contact" className="hover:text-foreground transition-colors">
-                                        Kontakt
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/faq" className="hover:text-foreground transition-colors">
-                                        FAQ
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
+                        {/*<div>*/}
+                        {/*    <h3 className="font-semibold text-foreground mb-4">Unternehmen</h3>*/}
+                        {/*    <ul className="space-y-3">*/}
+                        {/*        <li>*/}
+                        {/*            <Link href="/about" className="hover:text-foreground transition-colors">*/}
+                        {/*                Über uns*/}
+                        {/*            </Link>*/}
+                        {/*        </li>*/}
+                        {/*        <li>*/}
+                        {/*            <Link href="/contact" className="hover:text-foreground transition-colors">*/}
+                        {/*                Kontakt*/}
+                        {/*            </Link>*/}
+                        {/*        </li>*/}
+                        {/*        <li>*/}
+                        {/*            <Link href="/faq" className="hover:text-foreground transition-colors">*/}
+                        {/*                FAQ*/}
+                        {/*            </Link>*/}
+                        {/*        </li>*/}
+                        {/*    </ul>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
 
@@ -76,7 +76,7 @@ export default function Footer({
             {/* Copyright */}
             <div className="border-t border-border text-center text-sm py-6">
                 <p>
-                    &copy; {new Date().getFullYear()} {productName}. Alle Rechte vorbehalten.
+                    &copy; {new Date().getFullYear()} {productName}. All rights reserved.
                 </p>
             </div>
         </footer>
