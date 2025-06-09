@@ -1,5 +1,5 @@
 <p>
- <img src="../ropa-gen/public/star.svg" width="60" align="left" hspace="5">
+ <img src="public/star.svg" width="60" align="left" hspace="5">
  <p>
    <h1><a href="https://ganglem.space">ROPAgen</a></h1>
  </p>
