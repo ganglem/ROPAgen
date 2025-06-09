@@ -3,17 +3,18 @@ import {Button} from "@/components/ui/button";
 import {TypingAnimation} from "@/components/magicui/typing-animation";
 import BlurText from "@/components/ui/blur-text";
 import CircularText from "@/components/ui/circular-text";
+import MovingBanner from "@/components/ui/moving-banner";
 
 
 export default function Home() {
     return (
-        <>
+        <div>
             {/* Hero Section */}
             <section
-                className="relative h-[calc(100vh-4rem)] overflow-hidden"
+                className="h-[calc(100vh-4rem)] overflow-hidden md:flex md:flex-col md:justify-center md:items-start md:pb-10"
             >
 
-                <div className="fixed right-8 bottom-16 space-y-4">
+                <div className="fixed right-8 bottom-8 z-50">
                     <CircularText
                         text="POWERED*BY*AI*"
                         onHover="speedUp"
@@ -28,7 +29,7 @@ export default function Home() {
                 {/*/>*/}
 
                 {/* Text + Button at bottom-left */}
-                <div className="absolute left-8 bottom-16 space-y-4">
+                <div className="">
                     <h1>
                         <BlurText
                             text="ROPAgen"
@@ -51,7 +52,11 @@ export default function Home() {
                 </div>
             </section>
 
+            <section className="overflow-hidden">
+                <MovingBanner/>
+            </section>
+
             {/* …rest of your normal page sections… */}
-        </>
+        </div>
     )
 }
