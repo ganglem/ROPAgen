@@ -13,6 +13,7 @@
     "cardContent3": "With a user-friendly interface, ROPAgen makes it simple to create and manage your ROPA files. It even offers templates to get you started quickly."
   },
   "Generate": {
+    "locale": "English",
     "templateInfo": "Select a Template",
     "templatePlaceholder": "Choose a template to start with",
     "info": "Document Information",

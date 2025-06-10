@@ -45,7 +45,7 @@ export default function RopaForm({setGeneratedDocument}: {setGeneratedDocument: 
 
     async function handleGenerateDocument() {
         setIsGenerating(true);
-        const generatedDocument = await generateDocument(documentData)
+        const generatedDocument = await generateDocument(documentData, t("locale"));
         setIsGenerating(false);
         setGeneratedDocument(generatedDocument)
     }

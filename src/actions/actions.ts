@@ -10,9 +10,9 @@ export async function fetchMockTemplates(): Promise<Template[]> {
 }
 
 
-export async function generateDocument(data: DocumentData): Promise<string> {
+export async function generateDocument(data: DocumentData, locale: string): Promise<string> {
     try {
-        const prompt = generatePromptFromData(data);
+        const prompt = generatePromptFromData(data, locale);
 
         const {text: llmResponse} = await generateText({
             model: openai('gpt-4o'),
@@ -27,7 +27,7 @@ export async function generateDocument(data: DocumentData): Promise<string> {
     }
 }
 
-function generatePromptFromData(documentData: DocumentData): string {
+function generatePromptFromData(documentData: DocumentData, locale: string): string {
 
     const selectedCategories = Object.entries(documentData.categories)
         .filter(([_, isSelected]) => isSelected)
@@ -38,6 +38,8 @@ function generatePromptFromData(documentData: DocumentData): string {
     You are an expert in data protection compliance. Generate a professional, structured Records of Processing Activities (ROPA) document in full compliance with the EU General Data Protection Regulation (GDPR).
     
     This ROPA document must be suitable for official regulatory review and written in formal business language.
+    
+    Language: ${locale}
     
     Document Title:
     ${documentData.title || 'No title provided. Use standard GDPR best practices.'}

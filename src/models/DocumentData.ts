@@ -13,6 +13,7 @@ export interface DocumentData {
     title: string;
     categories: Record<Category, boolean>;
     additionalInfo: string;
+    language: string;
 }
 
 export interface Template {
@@ -20,4 +21,5 @@ export interface Template {
     title: string;
     categories: Record<Category, boolean>;
     additionalInfo: string;
+    language: string;
 }

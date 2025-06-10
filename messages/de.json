@@ -15,6 +15,7 @@
   },
 
   "Generate": {
+    "locale": "Deutsch",
     "templateInfo": "Template auswählen",
     "templatePlaceholder": "Wählen Sie ein Template aus",
     "info": "Dokumentinformationen",
