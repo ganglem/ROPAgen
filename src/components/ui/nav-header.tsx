@@ -64,7 +64,7 @@ export default function NavHeader({
                 transition={{ duration: 0.3 }}
                 className="
                     flex mx-auto items-center justify-center
-                    w-fit rounded-full border-border bg-gradient-to-br from-black/5 to-white/10
+                    w-fit rounded-full border-border bg-gradient-to-br from-white/20 to-white/80 dark:from-black/5 dark:to-white/20
                     backdrop-blur-xs shadow-md
           h-12
           px-3
