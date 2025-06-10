@@ -29,7 +29,7 @@
                                                 <Link
                                                     key={index}
                                                     href="/generate"
-                                                    className="flex-shrink-0 mx-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium whitespace-nowrap border border-primary/20 hover:bg-primary/20 transition-colors cursor-pointer"
+                                                    className="flex-shrink-0 mx-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium whitespace-nowrap  -primary/20 hover:bg-primary/20 transition-colors cursor-pointer"
                                                 >
                                                     {item}
                                                 </Link>
@@ -47,7 +47,7 @@
                                                 <Link
                                                     key={index}
                                                     href="/generate"
-                                                    className="flex-shrink-0 mx-2 px-4 py-2 bg-secondary text-secondary-foreground rounded-full text-sm font-medium whitespace-nowrap border hover:bg-secondary/80 transition-colors cursor-pointer"
+                                                    className="flex-shrink-0 mx-2 px-4 py-2 bg-secondary text-secondary-foreground rounded-full text-sm font-medium whitespace-nowrap  hover:bg-secondary/80 transition-colors cursor-pointer"
                                                 >
                                                     {item}
                                                 </Link>
@@ -65,7 +65,7 @@
                                                 <Link
                                                     key={index}
                                                     href="/generate"
-                                                    className="flex-shrink-0 mx-2 px-4 py-2 bg-accent text-accent-foreground rounded-full text-sm font-medium whitespace-nowrap border hover:bg-accent/80 transition-colors cursor-pointer"
+                                                    className="flex-shrink-0 mx-2 px-4 py-2 bg-accent text-accent-foreground rounded-full text-sm font-medium whitespace-nowrap  hover:bg-accent/80 transition-colors cursor-pointer"
                                                 >
                                                     {item}
                                                 </Link>
