@@ -1,0 +1,39 @@
+{
+  "Layout": {
+    "generate": "Erstellen"
+  },
+
+  "Home": {
+    "title": "Erstellen Sie Ihre DSGVO-konformen ROPA-Dateien. Jetzt einfach.",
+    "generateButton": "Jetzt erstellen",
+    "cardTitle1": "Unterstützt durch KI",
+    "cardContent1": "ROPAgen verwendet fortschrittliche KI-Algorithmen, um Ihre ROPA-Dateien schnell und präzise zu erstellen.",
+    "cardTitle2": "DSGVO-konform",
+    "cardContent2": "ROPAgen stellt sicher, dass Ihre ROPA-Dateien alle DSGVO-Anforderungen erfüllen, damit Sie sich auf Ihr Geschäft konzentrieren können.",
+    "cardTitle3": "Einfach zu bedienen",
+    "cardContent3": "Mit einem benutzerfreundlichem Design macht ROPAgen es einfach, Ihre ROPA-Dateien zu erstellen und zu verwalten. Es bietet sogar Templates, um Ihnen den Einstieg zu erleichtern."
+  },
+
+  "Generate": {
+    "templateInfo": "Template auswählen",
+    "templatePlaceholder": "Wählen Sie ein Template aus",
+    "info": "Dokumentinformationen",
+    "infoTitle": "Dokumenttitel",
+    "infoPlaceholder": "z.B. Datenschutzrichtlinie für Unternehmen ABC",
+    "categories": "Dokumentkategorien",
+    "additionalInfo": "Zusätzliche Informationen",
+    "additionalInfoPlaceholder": "Geben Sie spezifische Details zu Ihrem Unternehmen oder Anforderungen ein...",
+    "generateButton": "ROPA erstellen",
+    "generating": "ROPA wird erstellt..."
+  },
+
+  "Preview": {
+    "generatedDocument": "Erstelltes Dokument"
+  },
+
+  "Footer": {
+    "legal": "Rechtliche Hinweise",
+    "imprint": "Impressum",
+    "rights": "Alle Rechte vorbehalten."
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "Layout": {
+    "generate": "Generate"
+  },
+  "Home": {
+    "title": "Create your GDPR-compliant ROPA files with ease.",
+    "generateButton": "Generate now",
+    "cardTitle1": "Powered by AI",
+    "cardContent1": "ROPAgen uses advanced AI algorithms to generate your ROPA files quickly and accurately.",
+    "cardTitle2": "GDPR-compliant",
+    "cardContent2": "ROPAgen ensures that your ROPA files meet all GDPR requirements, so you can focus on your business.",
+    "cardTitle3": "Easy to use",
+    "cardContent3": "With a user-friendly interface, ROPAgen makes it simple to create and manage your ROPA files. It even offers templates to get you started quickly."
+  },
+  "Generate": {
+    "templateInfo": "Select a Template",
+    "templatePlaceholder": "Choose a template to start with",
+    "info": "Document Information",
+    "infoTitle": "Document Title",
+    "infoPlaceholder": "e.g., Privacy Policy for Company XYZ",
+    "categories": "Document Categories",
+    "additionalInfo": "Additional Information",
+    "additionalInfoPlaceholder": "Enter any specific details about your company or requirements...",
+    "generateButton": "Generate ROPA",
+    "generating": "Generating ROPA..."
+  },
+  "Preview": {
+    "generatedDocument": "Generated Document"
+  },
+
+  "Footer": {
+    "legal": "Legal",
+    "imprint": "Imprint",
+    "rights": "All rights reserved."
+  }
+}

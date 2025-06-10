@@ -4,6 +4,7 @@ import RopaForm from "@/components/ropa-form";
 import RopaPreview from "@/components/ropa-preview";
 import {useState} from "react";
 
+
 export default function Generate() {
 
     const [generatedDocument, setGeneratedDocument] = useState<string>("");

@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Github } from "lucide-react"
+import {useTranslations} from "next-intl";
 
 interface FooterProps {
     productName?: string
@@ -10,6 +11,9 @@ export default function Footer({
                                    productName = "ROPAgen",
                                    githubUrl = "https://github.com/ganglem/ropagen", // Bitte anpassen
                                }: FooterProps) {
+
+    const t = useTranslations('Footer');
+
     return (
         <footer className="border-t border-border text-muted-foreground">
             <div className="container mx-auto px-4 py-5 md:px-3 lg:py-8">
@@ -34,11 +38,11 @@ export default function Footer({
                     {/* Rechte Sektion: Links in Spalten */}
                     <div className="md:col-span-8 lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-8 text-sm">
                         <div>
-                            <h3 className="font-semibold text-foreground mb-4">Legal</h3>
+                            <h3 className="font-semibold text-foreground mb-4">{t("legal")}</h3>
                             <ul className="space-y-3">
                                 <li>
                                     <Link href="/impressum" className="hover:text-foreground transition-colors">
-                                        Imprint
+                                        {t("imprint")}
                                     </Link>
                                 </li>
                                 {/*<li>*/}
@@ -76,7 +80,7 @@ export default function Footer({
             {/* Copyright */}
             <div className="border-t border-border text-center text-sm py-6">
                 <p>
-                    &copy; {new Date().getFullYear()} {productName}. All rights reserved.
+                    &copy; {new Date().getFullYear()} {productName}. {t("rights")}
                 </p>
             </div>
         </footer>

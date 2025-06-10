@@ -11,9 +11,13 @@ import {Button} from "@/components/ui/button";
 import {generateDocument} from "@/actions/actions";
 import { Loader2 } from "lucide-react"
 import RopaTemplateSelector from "./ropa-template-selector";
+import {useTranslations} from "next-intl";
+
 
 
 export default function RopaForm({setGeneratedDocument}: {setGeneratedDocument: (doc: string) => void}) {
+
+    const t = useTranslations('Generate');
 
     const [documentData, setDocumentData] = useState({
         title: "",
@@ -53,22 +57,22 @@ export default function RopaForm({setGeneratedDocument}: {setGeneratedDocument: 
 
             <Card>
                 <CardHeader>
-                    <CardTitle>Document Information</CardTitle>
+                    <CardTitle>{t("info")}</CardTitle>
                 </CardHeader>
                 <CardContent>
                     <div className="space-y-8">
                         <div className="space-y-2">
-                            <Label htmlFor="title">Document Title</Label>
+                            <Label htmlFor="title">{t("infoTitle")}</Label>
                             <Input
                                 id="title"
-                                placeholder="e.g., Privacy Policy for Company XYZ"
+                                placeholder={t("infoPlaceholder")}
                                 value={documentData.title}
                                 onChange={(e: ChangeEvent<HTMLInputElement>) => handleTitleChange(e.target.value)}
                             />
                         </div>
 
                         <div className="space-y-2">
-                            <Label>Document Categories</Label>
+                            <Label>{t("categories")}</Label>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                                 {Object.keys(Category).map((key) => (
                                     <div key={key} className="flex items-center space-x-2">
@@ -86,10 +90,10 @@ export default function RopaForm({setGeneratedDocument}: {setGeneratedDocument: 
                         </div>
 
                         <div className="space-y-2">
-                            <Label htmlFor="additionalInfo">Additional Information</Label>
+                            <Label htmlFor="additionalInfo">{t("additionalInfo")}</Label>
                             <Textarea
                                 id="additionalInfo"
-                                placeholder="Enter any specific details about your company or requirements..."
+                                placeholder={t("additionalInfoPlaceholder")}
                                 className="min-h-[150px]"
                                 value={documentData.additionalInfo}
                                 onChange={(e: ChangeEvent<HTMLTextAreaElement>) => handleAdditionalInfoChange(e.target.value)}
@@ -98,8 +102,8 @@ export default function RopaForm({setGeneratedDocument}: {setGeneratedDocument: 
 
                         <Button onClick={handleGenerateDocument} disabled={isGenerating}>
                             {isGenerating ? (
-                                <> <Loader2 className="mr-2 h-4 w-4 animate-spin" /> Generating...</>) : (
-                                "Generate Document"
+                                <> <Loader2 className="mr-2 h-4 w-4 animate-spin" /> {t("generating")}</>) : (
+                                t("generateButton")
                             )}
                         </Button>
                     </div>

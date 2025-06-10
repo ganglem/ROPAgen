@@ -5,10 +5,13 @@ import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card"
 import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/components/ui/select"
 import {fetchMockTemplates} from "@/actions/actions"
 import {DocumentData, Template} from "@/models/DocumentData"
+import {useTranslations} from "next-intl";
 
 
 export default function RopaTemplateSelector({onSelect}: {
     onSelect: (template: DocumentData) => void }){
+
+    const t = useTranslations('Generate');
 
     const [templates, setTemplates] = useState<Template[]>([])
 
@@ -39,13 +42,13 @@ export default function RopaTemplateSelector({onSelect}: {
     return (
         <Card>
             <CardHeader>
-                <CardTitle>Select a Template</CardTitle>
+                <CardTitle>{t("templateInfo")}</CardTitle>
             </CardHeader>
             <CardContent>
                 <div className="space-y-4">
                     <Select onValueChange={handleTemplateChange}>
                         <SelectTrigger className="w-full">
-                            <SelectValue placeholder="Select a predefined template"/>
+                            <SelectValue placeholder={t("templatePlaceholder")}/>
                         </SelectTrigger>
                         <SelectContent>
                             {templates.map((template) => (

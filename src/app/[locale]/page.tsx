@@ -1,4 +1,3 @@
-import Link from "next/link";
 import {Button} from "@/components/ui/button";
 import {TypingAnimation} from "@/components/magicui/typing-animation";
 import BlurText from "@/components/ui/blur-text";
@@ -9,9 +8,13 @@ import {CardHeader, CardContent} from "@/components/ui/card";
 import { BrainCircuit } from 'lucide-react';
 import { Landmark } from 'lucide-react';
 import { UserCheck } from 'lucide-react';
+import {useTranslations} from 'next-intl';
+import {Link} from '@/i18n/navigation';
 
 
 export default function Home() {
+    const t = useTranslations('Home');
+
     return (
         <>
             {/* Hero Section */}
@@ -46,12 +49,12 @@ export default function Home() {
                     </h1>
 
                     <div className="text-2xl md:text-4xl">
-                        Create your GDPR-compliant ROPA files with ease.<br/>
+                        {t("title")}<br/>
                         <TypingAnimation delay={1000} startOnView={true}>Powered by AI.</TypingAnimation>
                     </div>
                     <Button>
                         <Link href="/generate">
-                            Generate now
+                            {t("generateButton")}
                         </Link>
                     </Button>
                 </div>
@@ -65,28 +68,28 @@ export default function Home() {
     <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(102, 102, 255, 0.2)">
         <CardHeader className="p-6 pb-0 flex items-center">
             <BrainCircuit className="mr-2 size-14" />
-            <h1 className="text-2xl">Powered by AI</h1>
+            <h1 className="text-2xl">{t("cardTitle1")}</h1>
         </CardHeader>
         <CardContent className="p-6">
-            ROPAgen uses advanced AI algorithms to generate your ROPA files quickly and accurately.
+            {t("cardContent1")}
         </CardContent>
     </SpotlightCard>
     <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(102, 102, 255, 0.2)">
         <CardHeader className="p-6 pb-0 flex items-center">
             <Landmark className="mr-2 size-14" />
-            <h1 className="text-2xl">GDPR-compliant</h1>
+            <h1 className="text-2xl">{t("cardTitle2")}</h1>
         </CardHeader>
         <CardContent className="p-6">
-            ROPAgen ensures that your ROPA files meet all GDPR requirements, so you can focus on your business.
+            {t("cardContent2")}
         </CardContent>
     </SpotlightCard>
     <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(102, 102, 255, 0.2)">
         <CardHeader className="p-6 pb-0 flex items-center">
             <UserCheck className="mr-2 size-14" />
-            <h1 className="text-2xl">Easy to use</h1>
+            <h1 className="text-2xl">{t("cardTitle3")}</h1>
         </CardHeader>
         <CardContent className="p-6">
-            With a user-friendly interface, ROPAgen makes it simple to create and manage your ROPA files. It even offers templates to get you started quickly.
+            {t("cardContent3")}
         </CardContent>
     </SpotlightCard>
 </section>
