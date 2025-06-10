@@ -29,6 +29,7 @@ export default function LocaleSwitch({ currentLocale }: { currentLocale: string 
   }
 
   return (
+      //TODO make this responsive
     <div className="hidden sm:flex items-center px-2" aria-label="Select language">
       {locales.map((locale, idx) => (
         <React.Fragment key={locale.code}>
