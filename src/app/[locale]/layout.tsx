@@ -8,6 +8,7 @@ import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import {getTranslations} from 'next-intl/server';
+import LocaleSwitch from "@/components/ui/locale-switch";
 
 
 export const metadata: Metadata = {
@@ -55,13 +56,16 @@ export default async function RootLayout({
 
                     {/* HEADER */}
                     <header className="sticky top-0 py-2 z-50">
-                      <NavHeader
-                        logoSrc="/star.svg"
-                        brandName="ROPAgen"
-                        links={[
-                          {name: t("generate"), href: "/generate"}
-                        ]}
-                      />
+                      <div className="flex items-center justify-between">
+                        <NavHeader
+                          logoSrc="/star.svg"
+                          brandName="ROPAgen"
+                          links={[
+                            {name: t("generate"), href: "/generate"}
+                          ]}
+                        />
+                        <LocaleSwitch currentLocale={locale} />
+                      </div>
                     </header>
 
                     {/* MAIN CONTENT */}
@@ -79,3 +83,4 @@ export default async function RootLayout({
         </html>
     );
 }
+

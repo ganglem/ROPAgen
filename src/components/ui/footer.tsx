@@ -41,7 +41,7 @@ export default function Footer({
                             <h3 className="font-semibold text-foreground mb-4">{t("legal")}</h3>
                             <ul className="space-y-3">
                                 <li>
-                                    <Link href="/impressum" className="hover:text-foreground transition-colors">
+                                    <Link href="/impressum" className="hover:text-primary transition-colors">
                                         {t("imprint")}
                                     </Link>
                                 </li>

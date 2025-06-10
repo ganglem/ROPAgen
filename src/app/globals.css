@@ -152,6 +152,8 @@
   --shadow-xl: var(--shadow-xl);
   --shadow-2xl: var(--shadow-2xl);
 
+
+  --duration: 1s;
   --animate-shine: shine var(--duration) infinite linear;
 
   @keyframes shine {
