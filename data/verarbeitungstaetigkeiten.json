@@ -1,0 +1,174 @@
+[
+  {
+    "id": "",
+    "titel": "",
+    "zweckDerDatenverarbeitung": "",
+    "kategorien": {
+      "rechtsgrundlage": {
+        "DSGVOArt6Abs1a": false,
+        "DSGVOArt6Abs1b": false,
+        "DSGVOArt6Abs1c": false,
+        "DSGVOArt6Abs1f": false,
+        "IfSG28b": false,
+        "SARS-CoV-Arbeitsschutzverordnung": false,
+        "BDSG26": false,
+        "HGB257": false,
+        "HGB239Abs1": false,
+        "AO147": false
+      },
+      "datenquellen": {
+        "microsoftOffice365": false,
+        "emailAnbieter": false,
+        "microsoftAzure": false,
+        "googleWorkspace": false,
+        "googleCloud": false,
+        "videokonferenzen": false,
+        "amazonAWS": false,
+        "ecommercePlattform": false,
+        "libreOffice": false,
+        "onlineBanking": false,
+        "finanzdienstleistungen": false,
+        "webUndIntranet": false,
+        "kreditdienste": false,
+        "personalSoftware": false,
+        "unternehmenssysteme": false,
+        "sicherheitUndCompliance": false,
+        "dokumentenverarbeitung": false,
+        "andereSpezialisierteSoftware": false
+      },
+      "datenkategorien": {
+        "personen": {
+          "nachname": false,
+          "vorname": false,
+          "geburtsdatum": false,
+          "geburtsort": false,
+          "geschlecht": false,
+          "staatsangehoerigkeit": false,
+          "adresse": false,
+          "telefonnummer": false,
+          "emailAdresse": false,
+          "familienstand": false,
+          "religionszugehoerigkeit": false
+        },
+        "beschaeftigung": {
+          "arbeitszeiten": false,
+          "beruflichePosition": false,
+          "personalnummer": false,
+          "firmenzugehörigkeit": false,
+          "urlaubsanspruch": false,
+          "urlaubstage": false,
+          "urlaubszeiten": false
+        },
+        "finanzen": {
+          "gehaltLohn": false,
+          "bankverbindung": false,
+          "steueridentifikationsnummer": false,
+          "steuerklasse": false,
+          "monatsgehaelter": false,
+          "monatsloehne": false,
+          "umsatz": false,
+          "rechnungsinformationen": false
+        },
+        "gesundheit": {
+          "krankenversicherungsnummer": false,
+          "sozialversicherungsnummer": false,
+          "krankheitstage": false,
+          "gesundheitsdaten": false,
+          "versicherungsstatus": false,
+          "datumAblaufImpfGenesenStatus": false,
+          "kopieNachweisZertifikat": false
+        },
+        "rechtliches": {
+          "vertragsdaten": false,
+          "ausweisdaten": false,
+          "insolvenzbescheid": false,
+          "schufaAuskunft": false,
+          "datenZurSubscription": false
+        },
+        "verhalten": {
+          "nutzungsverhalten": false,
+          "verhaltensdaten": false,
+          "browserverlaeufe": false,
+          "metadaten": false
+        },
+        "dokumentationUndAufzeichnungen": {
+          "individuelleDokumentation": false,
+          "beschwerdeDaten": false,
+          "belegeQuittung": false,
+          "bildmaterial": false,
+          "abrechnungsdaten": false,
+          "angebot": false,
+          "datenDerBestellung": false,
+          "lieferadresse": false,
+          "eingangsrechnung": false,
+          "ausgangsrechnung": false
+        },
+        "fahrzeug": {
+          "kfzKennzeichen": false,
+          "fahrdaten": false,
+          "fuehrerschein": false
+        },
+        "sonstiges": {
+          "fachkenntnisse": false,
+          "fäigkeiten": false,
+          "datumDerPruefung": false,
+          "statusDesNachweises": false,
+          "datumUhrzeitDerAbfrage": false,
+          "lieferkonditionen": false,
+          "nutzername": false,
+          "mengeDerDaten": false
+        }
+      },
+      "betroffenePersonen": {
+        "interneGruppen": false,
+        "externeKunden": false,
+        "juristischePersonen": false,
+        "gesundheitseinrichtungen": false,
+        "rekrutierungsstellen": false
+      },
+      "interneEmpfaengerkategorien": {
+        "management": false,
+        "verwaltung": false,
+        "technik": false,
+        "finanzen": false,
+        "rechtUndCompliance": false,
+        "marketingUndVertrieb": false,
+        "logistikUndBetrieb": false
+      },
+      "externeEmpfaengerkategorienEU": {
+        "staatlicheBehoerden": false,
+        "softwareUndCloudAnbieter": false,
+        "gesundheitsUndVersicherungsanbieter": false,
+        "finanzinstitute": false,
+        "geschaeftspartnerUndAgenturen": false,
+        "dienstleister": false,
+        "andere": false
+      },
+      "externeEmpfaengerkategorienDrittland": {
+        "dienstleister": false,
+        "auftragsverarbeiter": false
+      },
+      "zugriffsberechtigtePersonen": {
+        "managementRollen": false,
+        "administrativeRollen": false,
+        "technischeRollen": false,
+        "finanzielleRollen": false,
+        "rechtUndComplianceRollen": false,
+        "marketingUndVertriebsRollen": false,
+        "gesundheitsRollen": false,
+        "hrUndRekrutierungsRollen": false,
+        "sonstigeRollen": false
+      },
+      "regelfristenLoeschung": {
+        "nachBeendigungsDesArbeitsverhaeltnisses": false,
+        "nach6Monaten": false,
+        "nach48Monaten": false,
+        "nach11Jahren": false,
+        "aufWiderruf": false,
+        "ausgenommenFuerDrueberHinausgehendeAufbewahrungspflichten": false,
+        "speziellesLoeschkonzept": false
+      }
+    },
+    "additionalInfo": ""
+  }
+]
