@@ -1,7 +1,36 @@
 [
   {
-    "id": "",
-    "titel": "",
+    "id": "1",
+    "titel": "ROPA Template Muster",
+    "organisation": {
+      "name":             "Muster GmbH",
+      "kontakt": {
+        "adresse":        "Musterstraße 1, 12345 Musterstadt",
+        "email":          "dpo@muster.de",
+        "telefon":        "+49 30 1234567"
+      },
+      "rolle":            "controller",
+      "jointController":  [ { "name": "Partner AG", "kontakt": "kontakt@partner.de" } ],
+      "vertreter":        "Rep GmbH, rep@vertretung.eu",
+      "dpo":              "Max Müller, dpo@muster.de"
+    },
+    "prozessoren": [
+      {
+        "name":           "CloudSpeicher GmbH",
+        "kontakt":        "support@cloudspeicher.de",
+        "taetigkeiten":    "Speicherung von Backups für HR-Daten"
+      }
+    ],
+    "drittlandTransfers": [
+      {
+        "land":              "USA",
+        "transferMechanismus":"Standardvertragsklauseln",
+        "sicherungsmaßnahmen":"Verschlüsselung nach AES-256 während der Übertragung"
+      }
+    ],
+    "technischeOrganisatorischeMaßnahmen":
+    "Verschlüsselung ruhender Daten, Zutrittskontrolle, regelmäßige Pen-Tests",
+
     "zweckDerDatenverarbeitung": "",
     "kategorien": {
       "rechtsgrundlage": {
@@ -161,10 +190,9 @@
       },
       "regelfristenLoeschung": {
         "nachBeendigungsDesArbeitsverhaeltnisses": false,
-        "nach6Monaten": false,
-        "nach48Monaten": false,
-        "nach11Jahren": false,
+        "nachAufloesungDesVertrages": false,
         "aufWiderruf": false,
+        "loeschungsZeitpunkt": "",
         "ausgenommenFuerDrueberHinausgehendeAufbewahrungspflichten": false,
         "speziellesLoeschkonzept": false
       }
